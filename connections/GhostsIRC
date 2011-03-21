@@ -1,0 +1,18 @@
+[server]
+hostname = irc.ss23.geek.nz
+port = 6667
+ssl = false
+
+; How many times should we attempt to reconnect?
+reconnects = 5
+; How long should we wait before reconnecting after failing once (seconds)
+reconnectdelay = 10
+
+
+[user]
+ident = ss23
+real = ss23|Bot
+nick = ss23|Bot
+
+[channels]
+channel[] = ghosts
