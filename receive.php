@@ -20,8 +20,9 @@ if (!msg_queue_exists($id)) {
 }
 
 $res = msg_get_queue($id);
-while (msg_queue_exists(1)) {
+while (msg_queue_exists($id)) {
 	if (msg_receive($res, 0, $msgType, 99999, $message)) {
 		echo "Received '$message' of type '$msgType'\n";
 	}
 }
+

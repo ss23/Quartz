@@ -1,7 +1,0 @@
-PHP Bot utilizing IPC
-
-For now, only the listener is semi-functional, but it should give an idea of how a receiver would attach and handle messages.
-
-Currently, the only problem I can forsee is that it's a queue, once you read a message, it's removed from the queue. I could work around this by establishing a heirachy of recievers, or make every receiver enter a message into the queue after receiving it.
-
-TODO: Write the IRC part of this
